@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BSD-3-Clause
 pragma solidity =0.7.6;
 pragma abicoder v2;
-import "./ERC20SimpleSwap.sol";
-import "@openzeppelin/contracts/proxy/Clones.sol";
+import "./ChequeBook.sol";
+import "./openzeppelin/contracts/proxy/Clones.sol";
 
 /**
 @title Factory contract for SimpleSwap
@@ -24,21 +24,20 @@ contract SimpleSwapFactory {
 
   constructor(address _ERC20Address) {
     ERC20Address = _ERC20Address;
-    ERC20SimpleSwap _master = new ERC20SimpleSwap();
+    ChequeBook _master = new ChequeBook();
     // set the issuer of the master contract to prevent misuse
-    _master.init(address(1), address(0), 0);
+    _master.init(address(1), address(0));
     master = address(_master);
   }
   /**
   @notice creates a clone of the master SimpleSwap contract
   @param issuer the issuer of cheques for the new chequebook
-  @param defaultHardDepositTimeoutDuration duration in seconds which by default will be used to reduce hardDeposit allocations
   @param salt salt to include in create2 to enable the same address to deploy multiple chequebooks
   */
-  function deploySimpleSwap(address issuer, uint defaultHardDepositTimeoutDuration, bytes32 salt)
+  function deploySimpleSwap(address issuer, bytes32 salt)
   public returns (address) {    
     address contractAddress = Clones.cloneDeterministic(master, keccak256(abi.encode(msg.sender, salt)));
-    ERC20SimpleSwap(contractAddress).init(issuer, ERC20Address, defaultHardDepositTimeoutDuration);
+    ChequeBook(contractAddress).init(issuer, ERC20Address);
     deployedContracts[contractAddress] = true;
     emit SimpleSwapDeployed(contractAddress);
     return contractAddress;

@@ -1,0 +1,5731 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1624850657426,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/math/Math.sol": {
+      "lastModificationDate": 1624850657426,
+      "contentHash": "e5c844515b04deabacef7eb872abc384",
+      "sourceName": "@openzeppelin/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1624850657422,
+      "contentHash": "373a483bb0a88668c0735924d84f50f1",
+      "sourceName": "@openzeppelin/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1624850659042,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1624850657426,
+      "contentHash": "683b54445da8c95e82d8d8e20e81e544",
+      "sourceName": "@openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../token/ERC20/ERC20.sol",
+        "../token/ERC20/ERC20Burnable.sol",
+        "../token/ERC20/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1624850657430,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1624850659042,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1624850657422,
+      "contentHash": "54eb0b53c109558e8312811342e95bf0",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableSet.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol": {
+      "lastModificationDate": 1624850659042,
+      "contentHash": "1603b7aab78c87467dde869fd19ec86b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol": {
+      "lastModificationDate": 1624850659042,
+      "contentHash": "42c0638e45b2c33154488610fe3091fe",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1624850657430,
+      "contentHash": "db7b1afdb2c204e1e52100b79f0c847e",
+      "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1624850657430,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/utils/Pausable.sol": {
+      "lastModificationDate": 1624850657430,
+      "contentHash": "6960b40911542e6004ab95031ef9c3b9",
+      "sourceName": "@openzeppelin/contracts/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/SimpleSwapFactory.sol": {
+      "lastModificationDate": 1624878908563,
+      "contentHash": "520f8d41b6e807cc7e8bad7cbe2c7ea6",
+      "sourceName": "contracts/SimpleSwapFactory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ChequeBook.sol",
+        "./openzeppelin/contracts/proxy/Clones.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SimpleSwapFactory"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1624850657430,
+      "contentHash": "fc407ad42a493624854f6b33c44e9b00",
+      "sourceName": "@openzeppelin/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/TestToken.sol": {
+      "lastModificationDate": 1624850502680,
+      "contentHash": "78e31ec331860bd1d03526f1a887b1d5",
+      "sourceName": "contracts/TestToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/ChequeBook.sol": {
+      "lastModificationDate": 1624878632685,
+      "contentHash": "4e05472745de7fcd5809e66333e55a36",
+      "sourceName": "contracts/ChequeBook.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./openzeppelin/contracts/math/SafeMath.sol",
+        "./openzeppelin/contracts/math/Math.sol",
+        "./openzeppelin/contracts/cryptography/ECDSA.sol",
+        "./openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol",
+        "./IChequeBook.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ChequeBook"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/IChequeBook.sol": {
+      "lastModificationDate": 1624877110177,
+      "contentHash": "2fa150de5e495980a4eca0cf943cf0cc",
+      "sourceName": "contracts/IChequeBook.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IChequeBook"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "contracts/openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/math/Math.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "1b2b41cf411fe29db7d5774de77e9d6d",
+      "sourceName": "contracts/openzeppelin/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "e20d6c1a44aff02acbfd4696f53087e5",
+      "sourceName": "contracts/openzeppelin/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "52659a61e7fb46afdc3d0f00c3a87da6",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1624878602805,
+      "contentHash": "152354db17cf6801d992a8a518a06e5f",
+      "sourceName": "contracts/openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../token/ERC20/ERC20.sol",
+        "../token/ERC20/ERC20Burnable.sol",
+        "../token/ERC20/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "70ec621ea910798b6c590a0b402a5bb9",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "6b30e1ed8d604f14ebfc2e1707346c38",
+      "sourceName": "contracts/openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableSet.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/ERC20Burnable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "1f7a6465c50e33bb5edd4c01be41f50b",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/ERC20Pausable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "4798cf24900a0dce52586d42975fd816",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "67da1a55369b7665b43457144add6761",
+      "sourceName": "contracts/openzeppelin/contracts/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1624878602905,
+      "contentHash": "fc7c67d7b17cde979a685143a26b2bc8",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Pausable.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "76ded95f5a12004766ba82df351fe7de",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "fc407ad42a493624854f6b33c44e9b00",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ClonesMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "2d67dcc78651f24f3476133ed675426c",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ClonesMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Clones.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ClonesMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "62f6f55e1b5699e11dd1359e8a077903",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../access/Ownable.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/IBeacon.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "4db9e23bbd1f4807251e2533af88b4f7",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "4f17c0de1f7da8f37ab37794d3ca89d4",
+      "sourceName": "contracts/openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/ProxyAdmin.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "3488bf37a56bc43e015095b65acef15c",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol",
+        "./TransparentUpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "60d1c965370a0d4147587df77eb69358",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/UpgradeableProxy.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "dad09357825895af818c7c2b98920524",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/UpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "UpgradeableProxy"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "c124c88aa1d0782c213e70473610b7dc",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/BeaconProxy.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "9cac17efb5c9b7b1516bb485fc4fae27",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol",
+        "./IBeacon.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/OwnableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "afead70337fa1cd6cc3d83b41de85a15",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/OwnableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "OwnableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/payment/escrow/Escrow.sol": {
+      "lastModificationDate": 1624878602757,
+      "contentHash": "7f353e85a815bb4c5ca142e3056d825e",
+      "sourceName": "contracts/openzeppelin/contracts/payment/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/payment/PullPayment.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "02456934f5bc0f6fcfb427fd99bf4ed1",
+      "sourceName": "contracts/openzeppelin/contracts/payment/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/PullPaymentMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "22884770821fb6f193432fc2a8ea7663",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/PullPaymentMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../payment/PullPayment.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PullPaymentMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/payment/PaymentSplitter.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "bf627b36d3e22f446e0542e9ca31ef16",
+      "sourceName": "contracts/openzeppelin/contracts/payment/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../math/SafeMath.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PaymentSplitter"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1624878602805,
+      "contentHash": "8bea976959503119f96567ddae38e614",
+      "sourceName": "contracts/openzeppelin/contracts/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Counters.sol",
+        "../token/ERC721/ERC721.sol",
+        "../token/ERC721/ERC721Burnable.sol",
+        "../token/ERC721/ERC721Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "ebd32d219072a0232add3f1bb610731f",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "3fa5b045af1067a925e02da647523224",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/ERC721Burnable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "8d7420f7a5daa67a5b269a805c7bb1e5",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/ERC721Pausable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "0f97f1c6ce8eabb937c444621d8f0edb",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "1607fe9cc333c6de30f5098d45061a0b",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "7fe751b35ebe8466b56415cce55a7074",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "889ec04fca4214581eef408fff230efa",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "b00bb215c82f73f87e6fed90b74f67d6",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/ERC165.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "674a2137d8125c497b9dc83b82235171",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "d35f59d1f5a637f1c9d80319c401c779",
+      "sourceName": "contracts/openzeppelin/contracts/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "0a0b5402f31b9b60fdb741918c57247f",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/IERC165.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "253edeb099cfd6a3b0501d2620312e3e",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/PausableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "7d993c6a78921043d69ec82faa025caf",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/PausableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "PausableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/ERC1155Pausable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "6df36ed5633807856a55daa4053277e5",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "f0caea651952bb8c7c38660b74b90428",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155MetadataURI.sol",
+        "./IERC1155Receiver.sol",
+        "../../utils/Context.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "c568c38134d5f0f4d75f30681000bd04",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "01a56628352fd2b18eea7bca3797d959",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "fcf6fef010d4a269a2508b457da58d12",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/presets/ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1624878602805,
+      "contentHash": "77d11fb59440648db92de2bd2a11011d",
+      "sourceName": "contracts/openzeppelin/contracts/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../token/ERC1155/ERC1155.sol",
+        "../token/ERC1155/ERC1155Burnable.sol",
+        "../token/ERC1155/ERC1155Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/ERC1155Burnable.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "54d826645421d74cd655f08762751ae5",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC1155Mock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0f8606a503e6fb47df45eb1a32f05616",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC1155Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Mock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC1155PausableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "d564a245f3e8655f0e72085f56f519d8",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC1155PausableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Mock.sol",
+        "../token/ERC1155/ERC1155Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155PausableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/ERC1155Receiver.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "f93e3ae03f193b4209d03df327c49bb8",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155Receiver.sol",
+        "../../introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC1155ReceiverMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "26fb38fd9eb6305ca4876c8c91f02625",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC1155ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155Receiver.sol",
+        "./ERC165Mock.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155ReceiverMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC165Mock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "1479241771967ddeb19ed316ae437f39",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC165Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165Mock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC721Mock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "dfcfb4b6dbcb4e81eb8ac6c157e1ba99",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC721Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721Mock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC721GSNRecipientMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "3a197fddf8651c6cfa2d6ae47d842f8f",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC721GSNRecipientMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721.sol",
+        "../GSN/GSNRecipient.sol",
+        "../GSN/GSNRecipientSignature.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721GSNRecipientMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/GSNRecipient.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "fc0e58731496b99634db249a0216cd78",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/GSNRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "./IRelayRecipient.sol",
+        "./IRelayHub.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipient"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/GSNRecipientSignature.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "f67fd4240c7ca716d08f5ae94436199b",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/GSNRecipientSignature.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSNRecipient.sol",
+        "../cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipientSignature"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/IRelayRecipient.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "07064b41fd9bda23dff2cc7f05dba57d",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/IRelayRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IRelayRecipient"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/IRelayHub.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "4f4d6a2e6cd4a68a186b7761d7d2984b",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/IRelayHub.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IRelayHub"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/GSNRecipientSignatureMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0bd2459e8451f16a64e435c92ec9a095",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/GSNRecipientSignatureMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/GSNRecipient.sol",
+        "../GSN/GSNRecipientSignature.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipientSignatureMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/GSNRecipientMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a5bb6b71cec74b237a9b0c4d6c1c0570",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/GSNRecipientMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ContextMock.sol",
+        "../GSN/GSNRecipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipientMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ContextMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a8cea4e99b3351f1037dc5c36a0de883",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ContextMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ContextMock",
+        "ContextMockCaller"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/GSNRecipientERC20FeeMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "06155f921c4de55b3143d7e8299a6af2",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/GSNRecipientERC20FeeMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/GSNRecipient.sol",
+        "../GSN/GSNRecipientERC20Fee.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipientERC20FeeMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/GSNRecipientERC20Fee.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "69aae879101fc4a2185512b195c66cec",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/GSNRecipientERC20Fee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSNRecipient.sol",
+        "../math/SafeMath.sol",
+        "../access/Ownable.sol",
+        "../token/ERC20/SafeERC20.sol",
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "GSNRecipientERC20Fee",
+        "__unstable__ERC20Owned"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "f820d4ad7b31d38729f20fe1bda2d48f",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/ERC20Snapshot.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "144bac56aa876647a3df42a06769c075",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../utils/Arrays.sol",
+        "../../utils/Counters.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Arrays.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "b32b6362763392a7a9f6edada92ef6cd",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/CountersImpl.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a9715a5ce0e51c405b1af06aa39164ce",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/CountersImpl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "CountersImpl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/drafts/ERC20Permit.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "d3da235724edc8bc7d00aedca06d3274",
+      "sourceName": "contracts/openzeppelin/contracts/drafts/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol",
+        "./IERC20Permit.sol",
+        "../cryptography/ECDSA.sol",
+        "../utils/Counters.sol",
+        "./EIP712.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/drafts/IERC20Permit.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "554ef6825dd2112860a7f82be25dab45",
+      "sourceName": "contracts/openzeppelin/contracts/drafts/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/drafts/EIP712.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "978da83ab8d1ff945e5d117d3ab7daab",
+      "sourceName": "contracts/openzeppelin/contracts/drafts/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20PermitMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "2da1ce4a1f050eaa611eb4bfb4441eb2",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20PermitMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../drafts/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PermitMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/EIP712External.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "750d90b3d8d51469f8f623df7bfafeb9",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/EIP712External.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../drafts/EIP712.sol",
+        "../cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712External"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ECDSAMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a857b8e648e7ab3c10dc4dd813a7f8ba",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ECDSAMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ECDSAMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/MathMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "9713e2ac64baef513917586390b01344",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/MathMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MathMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ArraysImpl.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "51ec1107cf2b9d429d7088b995f8958d",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ArraysImpl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Arrays.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ArraysImpl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20SnapshotMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "5872274a5f5df835caf33b353af8de10",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20SnapshotMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Snapshot.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20SnapshotMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20Mock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "bf48e159a3c36f0a157fbf2d5c2e0b27",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Mock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20DecimalsMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0bfd2deb0eb74ca999110b2b8ee4d139",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20DecimalsMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20DecimalsMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/ERC20Capped.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "532a42efa323f6034095c206f1868466",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20CappedMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "66c1cea8ad946d87681f1dec8703598c",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20CappedMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Capped.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20CappedMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20PausableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "ecb39e35c801bc88c17a8e9437bf0efd",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20PausableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20PausableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/presets/ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1624878602805,
+      "contentHash": "7d2ca0d5571cec020b5ee68578a7c816",
+      "sourceName": "contracts/openzeppelin/contracts/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC20BurnableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "bc2ec0bde76c95846c34f3cc13b852d6",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC20BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20BurnableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/AccessControlMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "c7ab84169bb3046cfd7f77d53a2f3e87",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/AccessControlMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AccessControlMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/access/TimelockController.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "b629655c2f3d1ae1909181f929c04519",
+      "sourceName": "contracts/openzeppelin/contracts/access/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./../math/SafeMath.sol",
+        "./AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/EnumerableSetMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "cd8244c36b7f00023c0efb8fcd4fcbd1",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/EnumerableSetMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableAddressSetMock",
+        "EnumerableBytes32SetMock",
+        "EnumerableUintSetMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/SafeERC20Helper.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "ac0a8c01013020d2ae810b41a1daa2e9",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/SafeERC20Helper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC20/IERC20.sol",
+        "../token/ERC20/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20NoReturnMock",
+        "ERC20ReturnFalseMock",
+        "ERC20ReturnTrueMock",
+        "SafeERC20Wrapper"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC20/TokenTimelock.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "dfa992824895d4ead4a9ffed6fb574fd",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC20/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1624878602905,
+      "contentHash": "fb9f4505e2a0fbf947c4ba5fb31afa7b",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../../token/ERC20/IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1624878602905,
+      "contentHash": "aa7ffe082787cf157982853cfb2c48ff",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1624878602905,
+      "contentHash": "53c6fa098678c8b08e35a791b2b4a2ea",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1624878602905,
+      "contentHash": "087ff74885ba1ca738db92873d68250e",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "dfc92bdbdb89eb34aa90776fe7d30819",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/presets/ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1624878602805,
+      "contentHash": "32ff18037186e1f2d6c666efd82bb560",
+      "sourceName": "contracts/openzeppelin/contracts/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC777SenderRecipientMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "275cc467e18c689ed48fab65d5b7c192",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC777SenderRecipientMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC777/IERC777.sol",
+        "../token/ERC777/IERC777Sender.sol",
+        "../token/ERC777/IERC777Recipient.sol",
+        "../introspection/IERC1820Registry.sol",
+        "../introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC777SenderRecipientMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "de75ad1be2a45e9480946f4c07f2ecb5",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "40d31b7252ed39f09493040d8fd6e218",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC1820ImplementerMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0db298766bc7707538cfe0662cfd159e",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC1820ImplementerMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/Create2Impl.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "fb93a47f92a0708c46dc5bc2171dc319",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/Create2Impl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Create2.sol",
+        "../introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Create2Impl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/Create2.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "2bb95da96fc51968d082f5a0fd585ef0",
+      "sourceName": "contracts/openzeppelin/contracts/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC777Mock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "1b1e3fdae16ceceaa8f86864047395a4",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC777Mock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC777Mock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/StringsMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "ced27b57299509ad2800528ee4f496d6",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/StringsMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "StringsMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/EnumerableMapMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0501ccae0bc457851c93cc36e461e973",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/EnumerableMapMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableMap.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMapMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC721/ERC721Holder.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "82babaa8b209254f41664e4a4db3f7a2",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC721/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC721ReceiverMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a1f6df6df68139c2b037572cba1865f1",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC721ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721ReceiverMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC721BurnableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "7b129af8d2347f1f8ad4bec3e4120257",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC721BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721BurnableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC165/ERC165InterfacesSupported.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "ad1c30259ddd74d762752693d4995e8b",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC165/ERC165InterfacesSupported.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165InterfacesSupported",
+        "SupportsInterfaceWithLookupMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/token/ERC1155/ERC1155Holder.sol": {
+      "lastModificationDate": 1624878602881,
+      "contentHash": "cb86e074831206814aeff91ab249dd2c",
+      "sourceName": "contracts/openzeppelin/contracts/token/ERC1155/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC1155BurnableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "b871ccdb625332a45f5a8e42b2e17bab",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC1155BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/ERC1155Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC1155BurnableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC721PausableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "77157c52a886ea4724cddc1890a28898",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC721PausableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721PausableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ReentrancyAttack.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "20c678e07e095f85fa549b4b3cdf3a54",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ReentrancyAttack.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyAttack"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ReentrancyMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "d821b0a4b44c1224558e391463038980",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ReentrancyMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ReentrancyGuard.sol",
+        "./ReentrancyAttack.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "37d91d8474d6bb30ac3f58bd5938e4e5",
+      "sourceName": "contracts/openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1624878602665,
+      "contentHash": "ec4d2a99e786ecb23b0e42de520ff157",
+      "sourceName": "contracts/openzeppelin/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": []
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/SafeMathMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "8d221a9cb765ba1e24ae56f716816376",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/SafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMathMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/payment/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1624878602757,
+      "contentHash": "60fd0e402d88dba64f0d1307e656d12f",
+      "sourceName": "contracts/openzeppelin/contracts/payment/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/payment/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1624878602757,
+      "contentHash": "d85a3559a5e35d9a0b9883217ce66609",
+      "sourceName": "contracts/openzeppelin/contracts/payment/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ConditionalEscrowMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "0058d37a942b9ab3185bf6c09e061221",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ConditionalEscrowMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../payment/escrow/ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrowMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/proxy/Initializable.sol": {
+      "lastModificationDate": 1624878602877,
+      "contentHash": "1efacd801320f8f9413700ddbcf00647",
+      "sourceName": "contracts/openzeppelin/contracts/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.24 <0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/SingleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "008bfe807af211c1548d28c98813e548",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/SingleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MigratableMockV1",
+        "MigratableMockV2",
+        "MigratableMockV3"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/RegressionImplementation.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "45add15053622ae44f8eb080a90dd211",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/RegressionImplementation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Implementation1",
+        "Implementation2",
+        "Implementation3",
+        "Implementation4"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/MultipleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "09813b92291f99ef5dfd06f2fb33ed80",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SampleChild",
+        "SampleFather",
+        "SampleGramps",
+        "SampleHuman",
+        "SampleMother"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/InitializableMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "747e4227e4c389f8b234d3dd35ce5ada",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/InitializableMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "InitializableMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/AddressImpl.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "118523b18956a731292c4c2c5e236152",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/AddressImpl.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AddressImpl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "42b4b76891f74955d06814cc910ee586",
+      "sourceName": "contracts/openzeppelin/contracts/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/MerkleProofWrapper.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "97efb47620843f8157695d70d99d649b",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/MerkleProofWrapper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../cryptography/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "MerkleProofWrapper"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1624878602701,
+      "contentHash": "ef4b7ab8d64cd4154a863c42eca93a4e",
+      "sourceName": "contracts/openzeppelin/contracts/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC165CheckerMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "dee63505546b120aa508e809f94607e9",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC165CheckerMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../introspection/ERC165Checker.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165CheckerMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "f90947ba3efcd88fec132a905c4c6b38",
+      "sourceName": "contracts/openzeppelin/contracts/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/SignedSafeMathMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "e281029b52741d52e641b36167a29dd5",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/SignedSafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SignedSafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SignedSafeMathMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/BadBeacon.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "f98ff6dc84e6691cb6cb846468099774",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/BadBeacon.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "BadBeaconNoImpl",
+        "BadBeaconNotContract"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/CallReceiverMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "bb3078d59f402a0fae23f534e1397a7d",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/CallReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "CallReceiverMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ClashingImplementation.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "28e7800a47390d4ff97806d1f70a7429",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ClashingImplementation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ClashingImplementation"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/DummyImplementation.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "a0655c3390a9f79244a16992831fe7a4",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/DummyImplementation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "DummyImplementation",
+        "DummyImplementationV2",
+        "Impl"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/ERC165/ERC165NotSupported.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "da08f605f9c279fcac9a97e5cbeb1865",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/ERC165/ERC165NotSupported.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165NotSupported"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/EtherReceiverMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "d71fe8282723d98332cd6a1b84be1e23",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/EtherReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EtherReceiverMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/mocks/SafeCastMock.sol": {
+      "lastModificationDate": 1624878602705,
+      "contentHash": "3c3b554e8af826eb917206d6642fc926",
+      "sourceName": "contracts/openzeppelin/contracts/mocks/SafeCastMock.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeCastMock"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/openzeppelin/contracts/utils/SafeCast.sol": {
+      "lastModificationDate": 1624878602909,
+      "contentHash": "7827b0ec73093c1f4d13e4523e66b066",
+      "sourceName": "contracts/openzeppelin/contracts/utils/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    }
+  }
+}
