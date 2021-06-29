@@ -465,43 +465,6 @@
         "Pausable"
       ]
     },
-    "/home/caimin/apricot/swap-swear-and-swindle/contracts/SimpleSwapFactory.sol": {
-      "lastModificationDate": 1624878908563,
-      "contentHash": "520f8d41b6e807cc7e8bad7cbe2c7ea6",
-      "sourceName": "contracts/SimpleSwapFactory.sol",
-      "solcConfig": {
-        "version": "0.7.6",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./ChequeBook.sol",
-        "./openzeppelin/contracts/proxy/Clones.sol"
-      ],
-      "versionPragmas": [
-        "=0.7.6"
-      ],
-      "artifacts": [
-        "SimpleSwapFactory"
-      ]
-    },
     "/home/caimin/apricot/swap-swear-and-swindle/node_modules/@openzeppelin/contracts/proxy/Clones.sol": {
       "lastModificationDate": 1624850657430,
       "contentHash": "fc407ad42a493624854f6b33c44e9b00",
@@ -573,8 +536,8 @@
       ]
     },
     "/home/caimin/apricot/swap-swear-and-swindle/contracts/ChequeBook.sol": {
-      "lastModificationDate": 1624878632685,
-      "contentHash": "4e05472745de7fcd5809e66333e55a36",
+      "lastModificationDate": 1624937514767,
+      "contentHash": "fc132bd1ea8066d9c9c144c618486167",
       "sourceName": "contracts/ChequeBook.sol",
       "solcConfig": {
         "version": "0.7.6",
@@ -601,9 +564,8 @@
       "imports": [
         "./openzeppelin/contracts/math/SafeMath.sol",
         "./openzeppelin/contracts/math/Math.sol",
-        "./openzeppelin/contracts/cryptography/ECDSA.sol",
         "./openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "./openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol",
+        "./openzeppelin/contracts/access/Ownable.sol",
         "./IChequeBook.sol"
       ],
       "versionPragmas": [
@@ -5725,6 +5687,44 @@
       ],
       "artifacts": [
         "SafeCast"
+      ]
+    },
+    "/home/caimin/apricot/swap-swear-and-swindle/contracts/ChequeBookFactory.sol": {
+      "lastModificationDate": 1624937479343,
+      "contentHash": "ee922825386f895978fdb0723b6726d8",
+      "sourceName": "contracts/ChequeBookFactory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ChequeBook.sol",
+        "./openzeppelin/contracts/proxy/Clones.sol",
+        "./openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ChequeBookFactory"
       ]
     }
   }

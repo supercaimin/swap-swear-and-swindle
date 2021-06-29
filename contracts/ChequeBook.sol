@@ -3,10 +3,7 @@ pragma solidity =0.7.6;
 pragma abicoder v2;
 import "./openzeppelin/contracts/math/SafeMath.sol";
 import "./openzeppelin/contracts/math/Math.sol";
-import "./openzeppelin/contracts/cryptography/ECDSA.sol";
 import "./openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "./openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol";
-
 import "./IChequeBook.sol";
 
 contract ChequeBook is IChequeBook {
@@ -46,13 +43,13 @@ contract ChequeBook is IChequeBook {
         return balance().sub(totalHardDeposit);
     }
 
-    function payHardDeposit(address beneficiary, uint256 amount) override external {
+    function payHardDeposit(address recipient, uint256 amount) override external {
         
         _decreaseHardDeposit(msg.sender, amount);
 
-        _increaseBeneficiary(beneficiary, amount);
+        _increaseBeneficiary(recipient, amount);
 
-        emit HardDepositAmountChanged(beneficiary, beneficiaryBalances[beneficiary]);
+        emit HardDepositAmountChanged(recipient, beneficiaryBalances[recipient]);
     }
 
     function cashout(address recipient, uint256 amount) override external {
@@ -62,18 +59,19 @@ contract ChequeBook is IChequeBook {
         paidOut[msg.sender] = paidOut[msg.sender].add(amount);
         totalPaidOut = totalPaidOut.add(amount);
 
-        require(token.transfer(recipient, amount), "cashout transfer failed");
+        require(token.increaseAllowance(address(this), amount), "increase allowance failed");
+        require(token.transferFrom(address(this), recipient, amount), "cashout transfer failed");
     
         emit Cashouted(msg.sender, recipient,  amount);
     }
     
-    function pay(address beneficiary, uint256 amount) override external {
-        require(token.transfer(address(this), amount), "transfer failed");
-        _increaseBeneficiary(beneficiary, amount);
+    function pay(address recipient, uint256 amount) override external {
+        require(token.transferFrom(msg.sender, address(this), amount), "transfer failed");
+        _increaseBeneficiary(recipient, amount);
     }
 
     function deposit(uint256 amount) override external {
-        require(token.transfer(address(this), amount), "transfer failed");
+        require(token.transferFrom(msg.sender, address(this), amount), "transfer failed");
         _increaseHardDeposit(msg.sender, amount);
     }
 
@@ -96,6 +94,7 @@ contract ChequeBook is IChequeBook {
         require(totalBeneficiary.add(amount) <= balance(), "amount exceeds global balance");
 
         beneficiaryBalances[owner] = beneficiaryBalances[owner].add(amount);
+        totalBeneficiary = totalBeneficiary.add(amount);
     }
 
     function _decreaseBeneficiary(address owner, uint256 amount) internal {

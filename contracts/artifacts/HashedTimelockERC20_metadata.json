@@ -1,0 +1,328 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "contractId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "hashlock",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timelock",
+						"type": "uint256"
+					}
+				],
+				"name": "HTLCERC20New",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "contractId",
+						"type": "bytes32"
+					}
+				],
+				"name": "HTLCERC20Refund",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "contractId",
+						"type": "bytes32"
+					}
+				],
+				"name": "HTLCERC20Withdraw",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_contractId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "hashlock",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timelock",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "withdrawn",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "refunded",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "preimage",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_hashlock",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_timelock",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "newContract",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "contractId",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_contractId",
+						"type": "bytes32"
+					}
+				],
+				"name": "refund",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_contractId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_preimage",
+						"type": "bytes32"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"newContract(address,bytes32,uint256,address,uint256)": {
+					"details": "Sender / Payer sets up a new hash time lock contract depositing the funds and providing the reciever and terms. NOTE: _receiver must first call approve() on the token contract.       See allowance check in tokensTransferable modifier.",
+					"params": {
+						"_amount": "Amount of the token to lock up.",
+						"_hashlock": "A sha-2 sha256 hash hashlock.",
+						"_receiver": "Receiver of the tokens.",
+						"_timelock": "UNIX epoch seconds time that the lock expires at.                  Refunds can be made after this time.",
+						"_tokenContract": "ERC20 Token contract address."
+					},
+					"returns": {
+						"contractId": "Id of the new HTLC. This is needed for subsequent                    calls."
+					}
+				},
+				"refund(bytes32)": {
+					"details": "Called by the sender if there was no withdraw AND the time lock has expired. This will restore ownership of the tokens to the sender.",
+					"params": {
+						"_contractId": "Id of HTLC to refund from."
+					},
+					"returns": {
+						"_0": "bool true on success"
+					}
+				},
+				"withdraw(bytes32,bytes32)": {
+					"details": "Called by the receiver once they know the preimage of the hashlock. This will transfer ownership of the locked tokens to their address.",
+					"params": {
+						"_contractId": "Id of the HTLC.",
+						"_preimage": "sha256(_preimage) should equal the contract hashlock."
+					},
+					"returns": {
+						"_0": "bool true on success"
+					}
+				}
+			},
+			"title": "Hashed Timelock Contracts (HTLCs) on Ethereum ERC20 tokens. This contract provides a way to create and keep HTLCs for ERC20 tokens. See HashedTimelock.sol for a contract that provides the same functions for the native ETH token. Protocol:  1) newContract(receiver, hashlock, timelock, tokenContract, amount) - a      sender calls this to create a new HTLC on a given token (tokenContract)       for a given amount. A 32 byte contract id is returned  2) withdraw(contractId, preimage) - once the receiver knows the preimage of      the hashlock hash they can claim the tokens with this function  3) refund() - after timelock has expired and if the receiver did not      withdraw the tokens the sender / creator of the HTLC can get their tokens      back with this function.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HashedTimelockERC20.sol": "HashedTimelockERC20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HashedTimelockERC20.sol": {
+			"keccak256": "0x95aae539208dcde7c2a4ca13284061fdb80b9e87c7b303d91a62f87758a2c6f1",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://f22544a9419d9f0140f4feb8dc2d90cb196346dbcc082efa361b8cff9583d5e2",
+				"dweb:/ipfs/QmfSbzvx1QjhRUqFZbB9DsVaBgtm1akjw1hYMSfhHXYoSN"
+			]
+		},
+		"openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xe22a1fc7400ae196eba2ad1562d0386462b00a6363b742d55a2fd2021a58586f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a635cec58fb4141a16cfd408f1a21ac944c335a3beaba541c35d2e95c04536f",
+				"dweb:/ipfs/QmXWcz73UenN1ji8jiWMbzxHjjfLbNQwLVKTEB5zNFE34K"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0x36b5ca4eabe888b39b10973621ca0dcc9b1508f8d06db9ddf045d7aa7c867d4a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ccbd79e8d556aa7011babb0e5d1e55a966add74853e7ba0274ff184bd96ef002",
+				"dweb:/ipfs/QmV28ozNRUFDiDUMvCwcFmLTQPG6nfvgeKr4cmbHWoegtH"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b",
+				"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU"
+			]
+		},
+		"openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f",
+				"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96"
+			]
+		}
+	},
+	"version": 1
+}

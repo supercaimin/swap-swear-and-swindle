@@ -1,0 +1,217 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_ERC20Address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "ChequeBookDeployed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ERC20Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "deployChequeBook",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "deployedContracts",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "master",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "The Swarm Authors",
+			"kind": "dev",
+			"methods": {
+				"deployChequeBook(address,bytes32)": {
+					"params": {
+						"issuer": "the issuer of cheques for the new chequebook",
+						"salt": "salt to include in create2 to enable the same address to deploy multiple chequebooks"
+					}
+				}
+			},
+			"title": "Factory contract for ChequeBook",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"deployChequeBook(address,bytes32)": {
+					"notice": "creates a clone of the master ChequeBook contract"
+				}
+			},
+			"notice": "This contract deploys ChequeBook contracts",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ChequeBookFactory.sol": "ChequeBookFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ChequeBook.sol": {
+			"keccak256": "0x4b495881069ff760d03af1ffaf3952312d5a4a7fd3f1bc12e4c8275f880944b0",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://4bd759bb2c8178b8eab7f1c74ed161656982a325714468ad248cd77b22296c44",
+				"dweb:/ipfs/QmQA36L5geUNyPviRHVGFEsCFyhJjpiRPqd6G1gBxJomES"
+			]
+		},
+		"ChequeBookFactory.sol": {
+			"keccak256": "0xe93bb486f526d088adc34c1e18a86b8cdec27ad5cf1228e43d895305ef9a1704",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://9fb072401200bae960a6115b2ff871dc1213433c52020c50ab320a42d1d7f14a",
+				"dweb:/ipfs/QmeVovKMoJaWnhxmv3Nubx9SWWrf4bWGjMMfxFyGbB72hk"
+			]
+		},
+		"IChequeBook.sol": {
+			"keccak256": "0x02b3f52ec4f2bc8d4a57b36da72667e68f3f88e9398f4e419d59db70a457b441",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://0b9895326e457a00b66b85ba67a72608adaca3b50d19c67252d11799ee4c558d",
+				"dweb:/ipfs/QmVUJWZfSctZWGefDJJTWaAf1n7cLCsWVbtNhQdLhpdjEB"
+			]
+		},
+		"openzeppelin/contracts/math/Math.sol": {
+			"keccak256": "0xa4fdec0ea7d943692cac780111ff2ff9d89848cad0494a59cfaed63a705054b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33ce43e57ca89276dc54f022f92ebf1b57bb50c8a5ec18415ce3ae3513f8bbf1",
+				"dweb:/ipfs/QmcMEoXaS9dCa9EYN4y4zvq75Pmehy7DA6Q4VLiPaPCc9e"
+			]
+		},
+		"openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xe22a1fc7400ae196eba2ad1562d0386462b00a6363b742d55a2fd2021a58586f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a635cec58fb4141a16cfd408f1a21ac944c335a3beaba541c35d2e95c04536f",
+				"dweb:/ipfs/QmXWcz73UenN1ji8jiWMbzxHjjfLbNQwLVKTEB5zNFE34K"
+			]
+		},
+		"openzeppelin/contracts/proxy/Clones.sol": {
+			"keccak256": "0x0d24348f536f928d8b42789737bf34762faee065667ab530ea20969a9d9920d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb3289aa8c10ec1edf1dbfce9562298e3e6b20a80f38a1338cb127510dbdda50",
+				"dweb:/ipfs/QmZoX93r4bTL89d2gvxuVsr7QmkMVRpEymekZXoopGwymJ"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0x36b5ca4eabe888b39b10973621ca0dcc9b1508f8d06db9ddf045d7aa7c867d4a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ccbd79e8d556aa7011babb0e5d1e55a966add74853e7ba0274ff184bd96ef002",
+				"dweb:/ipfs/QmV28ozNRUFDiDUMvCwcFmLTQPG6nfvgeKr4cmbHWoegtH"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b",
+				"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU"
+			]
+		},
+		"openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f",
+				"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96"
+			]
+		}
+	},
+	"version": 1
+}

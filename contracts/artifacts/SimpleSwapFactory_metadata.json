@@ -1,0 +1,281 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_ERC20Address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "SimpleSwapDeployed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ERC20Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "deploySimpleSwap",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "deployedContracts",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "master",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "The Swarm Authors",
+			"kind": "dev",
+			"methods": {
+				"deploySimpleSwap(address,bytes32)": {
+					"params": {
+						"issuer": "the issuer of cheques for the new chequebook",
+						"salt": "salt to include in create2 to enable the same address to deploy multiple chequebooks"
+					}
+				}
+			},
+			"title": "Factory contract for SimpleSwap",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"deploySimpleSwap(address,bytes32)": {
+					"notice": "creates a clone of the master SimpleSwap contract"
+				}
+			},
+			"notice": "This contract deploys SimpleSwap contracts",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SimpleSwapFactory.sol": "SimpleSwapFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ChequeBook.sol": {
+			"keccak256": "0x74393f62ca21182a9dacf3942d52bbac6313e76ce88630f880f4c6f2102dc2ae",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://d839d48668637182044faf8fcfc9f8de4f5f728fd7850831f5e4fd7c83af31de",
+				"dweb:/ipfs/QmNNyBrJc4tSne1EGNHS6dNMHEM48e7vVUhZPhjMHHsLYL"
+			]
+		},
+		"IChequeBook.sol": {
+			"keccak256": "0xbcbd9cf8e61b0047f55c39b9134c87959532577d6cdccd9c188bf4fea94b363a",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://d816862f75250447ca10c42dda925aa5855c81f059640b5f6734b729680f162c",
+				"dweb:/ipfs/QmYQadLnmG225hJTStxwZ1PGjiAvyU9aXQWL5wNnfgmXN5"
+			]
+		},
+		"SimpleSwapFactory.sol": {
+			"keccak256": "0x86c1bf0e9c1232fca6cc2ec3bd89b1eaf6a879e98b5e34963d77c05817c1d4a6",
+			"license": "BSD-3-Clause",
+			"urls": [
+				"bzz-raw://812cbe6a9732b7db4f04d45edaccf0fa6c7b688c828c175f38db8bbab1a7b7a8",
+				"dweb:/ipfs/QmUcsDyo9j2grUEARvpiNs8Y6pchEitpPTh77gPLGQqtvz"
+			]
+		},
+		"openzeppelin/contracts/access/AccessControl.sol": {
+			"keccak256": "0x03835f486172e77c4c04bcdd5c943895256626d9a55c48fa5d5c11ec49fb18db",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://511af549081740622d0624b9cc315c306c835b53b6603bd11f272519f4a50924",
+				"dweb:/ipfs/QmeuNTEkcPikQbUSUVgL8WLB9QNmKxgsim3u66kzDEzcoN"
+			]
+		},
+		"openzeppelin/contracts/cryptography/ECDSA.sol": {
+			"keccak256": "0xc80ce3fcc5e444a2c5bdb902fe4d4f4ecba04e9b416425697d00ae95c1955f82",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a84a791d3dfe88a0dcc5b3b825e8375d0ed60c96067b5beb9e2f7dabb0afb0e6",
+				"dweb:/ipfs/QmPWUkNDWJkNgEZp1WuAMKkd2XvkuZBcx8HTTTauaj837Y"
+			]
+		},
+		"openzeppelin/contracts/math/Math.sol": {
+			"keccak256": "0xa4fdec0ea7d943692cac780111ff2ff9d89848cad0494a59cfaed63a705054b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33ce43e57ca89276dc54f022f92ebf1b57bb50c8a5ec18415ce3ae3513f8bbf1",
+				"dweb:/ipfs/QmcMEoXaS9dCa9EYN4y4zvq75Pmehy7DA6Q4VLiPaPCc9e"
+			]
+		},
+		"openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xe22a1fc7400ae196eba2ad1562d0386462b00a6363b742d55a2fd2021a58586f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a635cec58fb4141a16cfd408f1a21ac944c335a3beaba541c35d2e95c04536f",
+				"dweb:/ipfs/QmXWcz73UenN1ji8jiWMbzxHjjfLbNQwLVKTEB5zNFE34K"
+			]
+		},
+		"openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol": {
+			"keccak256": "0x6f11071ab6bec70c4c751841eed5d3d8cdb3ac4af252326d2c49bd45e8e9edc3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe5ca655eb3bc60ee717b4191d4b8fca39ae65c30bfad133aafd4d4d03ec418f",
+				"dweb:/ipfs/QmR5VAipT12dWH6FhXyMLoo9QtNgyhmznMLWicVTF6yHyh"
+			]
+		},
+		"openzeppelin/contracts/proxy/Clones.sol": {
+			"keccak256": "0x0d24348f536f928d8b42789737bf34762faee065667ab530ea20969a9d9920d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb3289aa8c10ec1edf1dbfce9562298e3e6b20a80f38a1338cb127510dbdda50",
+				"dweb:/ipfs/QmZoX93r4bTL89d2gvxuVsr7QmkMVRpEymekZXoopGwymJ"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0x36b5ca4eabe888b39b10973621ca0dcc9b1508f8d06db9ddf045d7aa7c867d4a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ccbd79e8d556aa7011babb0e5d1e55a966add74853e7ba0274ff184bd96ef002",
+				"dweb:/ipfs/QmV28ozNRUFDiDUMvCwcFmLTQPG6nfvgeKr4cmbHWoegtH"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/ERC20Burnable.sol": {
+			"keccak256": "0xd0a21cff55cb441156c0199fdd98696fd4ae28f5c9e230aecb906755154558b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7bc4576e8fbda82b91554ba8e2103395884bef1d4c4bf04ff1516525361c07ed",
+				"dweb:/ipfs/QmTiRPEWX4qACxKkcd8aUGFNXYH87gNdhZdmXsZQnzvDAW"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/ERC20Pausable.sol": {
+			"keccak256": "0x9d4e1a0a660aedc468956b2c195489b75214aaf0749155e01d187e11b18b36c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3dd4581a641ef5447ff9f066bd3720ca70824ecf731d69f739360f95db75b9c3",
+				"dweb:/ipfs/QmVHJ9kbpZS8NWKZ4BKR8gi8EdekEyqrcTapqUsD5WErRM"
+			]
+		},
+		"openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d0913dfbfce90d170df0d496ad7596c0778518e5fa7aba6c32562522546f66b",
+				"dweb:/ipfs/QmR6B8nLj2PJf5e1JWD9Nk7ErkAwkqUwadCnvE82FJr1RU"
+			]
+		},
+		"openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0xf89f005a3d98f7768cdee2583707db0ac725cf567d455751af32ee68132f3db3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f963d438177764b5f43f637c02311c951c0f0025d12fe1ac7e62e295bf416c41",
+				"dweb:/ipfs/QmcfVb9JsWrYeTwFUJsKVHpKB7EaWBKydAH9S4sKg2pzcK"
+			]
+		},
+		"openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f",
+				"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96"
+			]
+		},
+		"openzeppelin/contracts/utils/EnumerableSet.sol": {
+			"keccak256": "0x9a2c1eebb65250f0e11882237038600f22a62376f0547db4acc0dfe0a3d8d34f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ccafc1afbcbf54559beea9c029d0b7656c56a185813c5fa74c4ea3eb4b608419",
+				"dweb:/ipfs/QmTKwdbenDfNwmwRVh8VKtA6mhFK2AyTFRoJF3BqLB81KM"
+			]
+		},
+		"openzeppelin/contracts/utils/Pausable.sol": {
+			"keccak256": "0x4c5617b558186dc4b2b994b18ab9236410cd2dd1d9ad1213bbcca2e1d5321ce8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27b103fe3d550cf3717751a2c67e14008806af25baa3916b5717eeb68a2767ad",
+				"dweb:/ipfs/QmS6gG9XVCx3qco7ewaSgJdcQRfZuurqxqPnKmRJ3Dj7Fg"
+			]
+		}
+	},
+	"version": 1
+}
