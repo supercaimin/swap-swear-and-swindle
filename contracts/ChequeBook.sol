@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause
 pragma solidity =0.7.6;
 pragma abicoder v2;
-import "./openzeppelin/contracts/math/SafeMath.sol";
-import "./openzeppelin/contracts/math/Math.sol";
-import "./openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/math/Math.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "./IChequeBook.sol";
 
 contract ChequeBook is IChequeBook {
@@ -27,7 +27,12 @@ contract ChequeBook is IChequeBook {
     /* issuer of the contract, set at construction */
     address public issuer;
 
-    function init(address _issuer, address _token) public {
+    function init(
+        address _issuer, 
+        address _token
+    ) 
+        public 
+    {
         require(_issuer != address(0), "invalid issuer");
         require(issuer == address(0), "already initialized");
         issuer = _issuer;
@@ -43,66 +48,108 @@ contract ChequeBook is IChequeBook {
         return balance().sub(totalHardDeposit);
     }
 
-    function payHardDeposit(address recipient, uint256 amount) override external {
+    function payHardDeposit(
+        address _recipient, 
+        uint256 _amount
+    ) 
+        override 
+        external 
+    {
         
-        _decreaseHardDeposit(msg.sender, amount);
+        _decreaseHardDeposit(msg.sender, _amount);
 
-        _increaseBeneficiary(recipient, amount);
+        _increaseBeneficiary(_recipient, _amount);
 
-        emit HardDepositAmountChanged(recipient, beneficiaryBalances[recipient]);
+        emit HardDepositAmountChanged(_recipient, beneficiaryBalances[_recipient]);
     }
 
-    function cashout(address recipient, uint256 amount) override external {
+    function cashout(
+        address _recipient, 
+        uint256 _amount
+    ) 
+        override
+        external
+    {
     
-        _decreaseBeneficiary(msg.sender, amount);
+        _decreaseBeneficiary(msg.sender, _amount);
 
-        paidOut[msg.sender] = paidOut[msg.sender].add(amount);
-        totalPaidOut = totalPaidOut.add(amount);
+        paidOut[msg.sender] = paidOut[msg.sender].add(_amount);
+        totalPaidOut = totalPaidOut.add(_amount);
 
-        require(token.increaseAllowance(address(this), amount), "increase allowance failed");
-        require(token.transferFrom(address(this), recipient, amount), "cashout transfer failed");
+        require(token.increaseAllowance(address(this), _amount), "increase allowance failed");
+        require(token.transferFrom(address(this), _recipient, _amount), "cashout transfer failed");
     
-        emit Cashouted(msg.sender, recipient,  amount);
+        emit Cashouted(msg.sender, _recipient,  _amount);
     }
     
-    function pay(address recipient, uint256 amount) override external {
-        require(token.transferFrom(msg.sender, address(this), amount), "transfer failed");
-        _increaseBeneficiary(recipient, amount);
+    function pay(
+        address _recipient,
+        uint256 _amount
+    ) 
+        override external 
+    {
+        require(token.transferFrom(msg.sender, address(this), _amount), "transfer failed");
+        _increaseBeneficiary(_recipient, _amount);
     }
 
-    function deposit(uint256 amount) override external {
-        require(token.transferFrom(msg.sender, address(this), amount), "transfer failed");
-        _increaseHardDeposit(msg.sender, amount);
+    function deposit(
+        uint256 _amount
+    ) 
+        override
+        external
+    {
+        require(token.transferFrom(msg.sender, address(this), _amount), "transfer failed");
+        _increaseHardDeposit(msg.sender, _amount);
     }
 
-    function _increaseHardDeposit(address owner, uint256 amount) internal {
-        require(totalHardDeposit.add(amount) <= balance(), "amount exceeds global balance");
-        hardDepositBalances[owner] = hardDepositBalances[owner].add(amount);
-        totalHardDeposit = totalHardDeposit.add(amount);
+    function _increaseHardDeposit(
+        address _owner, 
+        uint256 _amount
+    ) 
+        internal 
+    {
+        require(totalHardDeposit.add(_amount) <= balance(), "amount exceeds global balance");
+        hardDepositBalances[_owner] = hardDepositBalances[_owner].add(_amount);
+        totalHardDeposit = totalHardDeposit.add(_amount);
     }
 
-    function _decreaseHardDeposit(address owner, uint256 amount) internal {
-        require(hardDepositBalances[owner] >= amount, "amount exceeds owner balance");
+    function _decreaseHardDeposit(
+        address _owner, 
+        uint256 _amount
+    )
+        internal
+    {
+        require(hardDepositBalances[_owner] >= _amount, "amount exceeds owner balance");
 
-        require(totalHardDeposit >= amount, "amount exceeds total hard deposit");
+        require(totalHardDeposit >= _amount, "amount exceeds total hard deposit");
         
-        hardDepositBalances[owner] = hardDepositBalances[owner].sub(amount);
-        totalHardDeposit = totalHardDeposit.sub(amount);
+        hardDepositBalances[_owner] = hardDepositBalances[_owner].sub(_amount);
+        totalHardDeposit = totalHardDeposit.sub(_amount);
     }
 
-    function _increaseBeneficiary(address owner, uint256 amount) internal {
-        require(totalBeneficiary.add(amount) <= balance(), "amount exceeds global balance");
+    function _increaseBeneficiary(
+        address _owner, 
+        uint256 _amount
+    ) 
+        internal 
+    {
+        require(totalBeneficiary.add(_amount) <= balance(), "amount exceeds global balance");
 
-        beneficiaryBalances[owner] = beneficiaryBalances[owner].add(amount);
-        totalBeneficiary = totalBeneficiary.add(amount);
+        beneficiaryBalances[_owner] = beneficiaryBalances[_owner].add(_amount);
+        totalBeneficiary = totalBeneficiary.add(_amount);
     }
 
-    function _decreaseBeneficiary(address owner, uint256 amount) internal {
+    function _decreaseBeneficiary(
+        address _owner, 
+        uint256 _amount
+        ) 
+        internal 
+    {
 
-        require(totalBeneficiary >= amount, "amount exceeds total beneficiary");
+        require(totalBeneficiary >= _amount, "amount exceeds total beneficiary");
 
-        beneficiaryBalances[owner] = beneficiaryBalances[owner].sub(amount);
-        totalBeneficiary = totalBeneficiary.sub(amount);
+        beneficiaryBalances[_owner] = beneficiaryBalances[_owner].sub(_amount);
+        totalBeneficiary = totalBeneficiary.sub(_amount);
     }
 
 }

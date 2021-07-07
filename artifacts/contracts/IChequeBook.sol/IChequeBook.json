@@ -38,7 +38,7 @@
       "inputs": [
         {
           "internalType": "address",
-          "name": "beneficiary",
+          "name": "recipient",
           "type": "address"
         },
         {
@@ -56,7 +56,7 @@
       "inputs": [
         {
           "internalType": "address",
-          "name": "beneficiary",
+          "name": "recipient",
           "type": "address"
         },
         {

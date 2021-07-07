@@ -22,3 +22,18 @@
 ```
 设计原则，前期只针对非专业用户，所以操作上尽量降低门槛，尽量傻瓜式操作；后续版本将针对专业用户，支持更丰富的协议、更多的自定义配置、更灵活的计费方式
 ```
+
+## 子系统
+
+1.provider端：实现服务配置、服务注册、代币抵押，基于x-ui修改
+
+2.client端：
+
+3.center端：consul服务注册与发现、服务概览、账户、收益展示等功能，参考https://network.thegraph.com/network 进行设计
+
+3.center端：consul服务注册与发现、服务概览、账户、收益展示等功能，参考https://network.thegraph.com/network 进行设计
+
+4.android客户端，基于SagerNet进行设计
+
+5.ios客户端，优先级最后
+

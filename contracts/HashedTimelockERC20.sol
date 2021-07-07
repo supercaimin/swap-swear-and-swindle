@@ -1,8 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
 pragma solidity =0.7.6;
+pragma abicoder v2;
 
-import "./openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
 * @title Hashed Timelock Contracts (HTLCs) on Ethereum ERC20 tokens.

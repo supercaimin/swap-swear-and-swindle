@@ -5,11 +5,11 @@ pragma solidity =0.7.6;
 
 interface IChequeBook {
     // pay without hard deposit
-    function pay(address recipient, uint256 amount) external;
+    function pay(address _recipient, uint256 _amount) external;
     // pay with hard deposit
-    function payHardDeposit(address recipient, uint256 amount) external;
+    function payHardDeposit(address _recipient, uint256 _amount) external;
     // hard deposit
-    function deposit(uint256 amount) external;
+    function deposit(uint256 _amount) external;
     // cashout
-    function cashout(address recipient, uint256 amount) external; 
+    function cashout(address _recipient, uint256 _amount) external; 
 }

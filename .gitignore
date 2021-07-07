@@ -4,3 +4,6 @@ node_modules
 *.go
 coverage
 coverage.json
+artifacts/
+bindings/
+contracts/.deps/

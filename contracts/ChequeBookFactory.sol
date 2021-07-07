@@ -2,7 +2,7 @@
 pragma solidity =0.7.6;
 pragma abicoder v2;
 import "./ChequeBook.sol";
-import "./openzeppelin/contracts/proxy/Clones.sol";
+import "@openzeppelin/contracts/proxy/Clones.sol";
 
 /**
 @title Factory contract for ChequeBook
@@ -14,8 +14,8 @@ contract ChequeBookFactory {
   /* event fired on every new ChequeBook deployment */
   event ChequeBookDeployed(address contractAddress);
 
-  /* mapping to keep track of which contracts were deployed by this factory */
-  mapping (address => bool) public deployedContracts;
+  /* store chequebook contract  were deployed by this factory */
+  address public deployedContractAddress;
 
   /* address of the ERC20-token, to be used by the to-be-deployed chequebooks */
   address public ERC20Address;
@@ -37,7 +37,7 @@ contract ChequeBookFactory {
   function deployChequeBook(address issuer, bytes32 salt) public returns (address) {    
     address contractAddress = Clones.cloneDeterministic(master, keccak256(abi.encode(msg.sender, salt)));
     ChequeBook(contractAddress).init(issuer, ERC20Address);
-    deployedContracts[contractAddress] = true;
+    deployedContractAddress = contractAddress;
     emit ChequeBookDeployed(contractAddress);
     return contractAddress;
   }
